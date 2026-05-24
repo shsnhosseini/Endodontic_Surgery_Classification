@@ -18,7 +18,7 @@ This project implements pipeline for processing, visualizing, and generating tra
 2. [Data Preprocessing](#data-preprocessing)
 3. [Data Visualization](#data-visualization)
 4. [Input Pipeline Options](#input-pipeline-options)
-5. [Data Generation Methods](#data-generation-methods)
+5. [Data Generation Methods](#data-generation)
 
 ---
 
@@ -31,11 +31,6 @@ The following libraries are installed and used:
 - **pydicom**: For reading and processing DICOM medical images
 - **split-folders**: For organizing and splitting data into train/validation/test sets
 - **gdown**: For downloading files from Google Drive
-- **TensorFlow/Keras**: For data pipeline management
-- **NumPy**: For numerical array operations
-- **Pandas**: For data manipulation and CSV handling
-- **Matplotlib & Seaborn**: For data visualization
-- **SciPy (ndimage)**: For image processing (zooming, resizing)
 
 ### Installation Commands
 
@@ -169,7 +164,7 @@ The notebook provides three different approaches to handle the input data pipeli
 - On-the-fly preprocessing
 - Real-time image reading from disk
 
-**Features**:
+**Process**:
 - Read DICOM files directly from disk
 - Apply cropping, normalization, and expansion in the generator
 - Configurable batch size and preprocessing parameters
@@ -184,7 +179,7 @@ The notebook provides three different approaches to handle the input data pipeli
 - Memory efficient (batch-wise loading)
 - Fastest training speed
 
-**Workflow**:
+**Process**:
 1. Preprocess all DICOM images into `.npy` files in stages
 2. Organize `.npy` files into train/validation/test directory structure
 3. Load preprocessed arrays batch-by-batch using custom generator
@@ -196,7 +191,7 @@ The notebook provides three different approaches to handle the input data pipeli
 
 ### Custom DICOM Data Generator Class
 
-The notebook implements a custom data generator class `DICOMDataGenerator` that inherits from `tf.keras.utils.Sequence` class:
+A custom data generator class `DICOMDataGenerator` is implemented that inherits from `tf.keras.utils.Sequence` class:
 
 #### Key Features
 
