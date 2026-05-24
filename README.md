@@ -338,7 +338,13 @@ Simply execute the cells in order:
 
 The processed data and generators are ready for use with TensorFlow/Keras models for Deep Learning tasks.
 
-## Contact
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report issues or bugs
+- Suggest improvements
+
+## 📧 Contact
 
 For contributions, questions, or collaborations, please don't hesitate to reach out via email :)
 hosseini.sc95@gmail.com 
