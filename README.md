@@ -38,7 +38,6 @@ The following libraries are installed and used:
 !pip install pydicom
 !pip install split-folders[full]
 !pip install -U gdown
-!pip install visualkeras
 ```
 
 ### Hardware Acceleration
