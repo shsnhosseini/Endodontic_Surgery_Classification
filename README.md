@@ -344,7 +344,7 @@ Contributions are welcome! Feel free to:
 - Report issues or bugs
 - Suggest improvements
 
-## 📧 Contact
+## ✉️ Contact
 
 For contributions, questions, or collaborations, please don't hesitate to reach out via email :)
 hosseini.sc95@gmail.com 
